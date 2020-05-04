@@ -1,24 +1,31 @@
-# vue-node-google-cloud-s-speech
+<h1 align="center">
+  <div>
+    <img src="./demo.gif" />
+  </div>
+</h1>
 
-## Project setup
+# Brief
+This is a simple demo how to use Google Cloud Speech with VueJS and NodeJS
+
+# Usage
+First install dependencies by running:
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Start client
+Run `npm run serve` to start VueJS client
+
+### Start backend
+Before start backend you have to export an environment that links to your Google Service Account Key
+
+Eg:
 ```
-npm run serve
+export GOOGLE_APPLICATION_CREDENTIALS="absolute_path_to_service_acount_key_file"
+```
+Then in the same terminal, run the following command to start backend:
+```
+npm run dev
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Now you're ready to go

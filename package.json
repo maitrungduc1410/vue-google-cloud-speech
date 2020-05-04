@@ -1,14 +1,19 @@
 {
-  "name": "vue-node-google-cloud-s-speech",
+  "name": "vue-node-google-cloud-speech",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
+    "@google-cloud/speech": "^3.6.0",
     "core-js": "^3.6.4",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -18,6 +23,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "nodemon": "^2.0.3",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
